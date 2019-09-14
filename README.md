@@ -2,4 +2,6 @@
 
 This repo contains flask projects
 
-+ Hello App
++ Hello  World App
+
++ Note Taking app
