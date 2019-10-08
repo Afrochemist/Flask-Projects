@@ -1,1 +1,27 @@
-index.html
+{% extends 'base.html' %}
+
+{% block title %}Guest Book{% endblock %}
+
+{% block css %}
+	<!--Bootstrap theme -->
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/boostrap-theme.min.css') }}">
+		<!--- Custome styles for this template -->
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/theme.css') }}">
+{% endblock %}
+
+{% block body%}
+	<div class='container theme-showcase' role='main'>
+			<div class='jumbotron'>
+				<h1>Guest Book</h1>
+				<a type="button" class='btn btn-link' href="{{ url_for('main.sign') }}"></a>
+			</div>
+			<div class = 'page-header'>
+				<h1>Name</h1>
+			</div>
+			<div class='well'>
+				<p>This is a comment</p>
+			</div>
+		</div> <!--/container -->
+{% endblock %}
+
+
